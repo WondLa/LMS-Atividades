@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu-superior {
+    height: 23.3%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: chocolate;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.navegador-lateral {
+    height: 60%;
+    width: 15%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    background-color: aquamarine;
+}
+
+.navegador-lateral button {
+    margin-top: 80px;
+    
+}
+
+.textos-e-dropdowns {
+    width: 70%;
+    position: relative;
+}
+
+.dropdowns {
+    position: absolute;
+    width: 10vh;
+    top: 9vh;
+    left: 19vh;
+}
+
+.dropdowns ul li a {
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.dropdowns-content {
+    display: none;
+}
+
+.botao:hover + .dropdowns-content{
+    display: block;
+}
+
+.textos {
+    position: absolute;
+    left: 19vh;
+    top: 22vh;
+    width: 80vh;
+}
+
+.barra-lateral {
+    width: 15%;
+    background-color: deepskyblue;
+}
