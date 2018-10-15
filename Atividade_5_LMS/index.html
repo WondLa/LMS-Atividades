@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    
+</head>
+
+<body>
+    <nav class="navegador-lateral">
+        <ul>
+            <li>
+                <a href="">Link 1</a>
+            </li>
+            <li>
+                <a href="">Link 2</a>
+            </li>
+            <li>
+                <a href="">Link 3</a>
+            </li>
+        </ul>
+    </nav>    
+    <div class="pagina">        
+        <header class="cabecalho">
+            <a class="sanduiche">&#9776</a>
+            <span class="nome-pagina" >Gatinhos.miau</span>
+        </header>
+        <div class="conteudo">
+            <div class="textos">
+                <ul>
+                    <li>
+                        <a class="botao">Texto 1</a>
+                        <section class="texto">bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </section>
+                    </li>
+                    <li>
+                        <a class="botao">Texto 2</a>
+                        <section class="texto">bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </section>
+                    </li>
+                    <li>
+                        <a class="botao">Texto 3</a>
+                        <section class="texto">bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </section>
+                    </li>
+                </ul>
+            </div>                             
+        </div>
+    </div>
+    
+
+    <script>
+
+            function aparecerLateral() {
+                let nae = document.getElementsByTagName("nav");
+                let pag = document.getElementsByClassName("pagina");
+                nae[0].classList.toggle("navegador-visivel");
+                pag[0].classList.toggle("pagina-visivel");
+            }
+    
+            let botao = document.getElementsByClassName("sanduiche");
+            botao[0].addEventListener("click", aparecerLateral);
+
+            
+            
+            let button = document.getElementsByClassName("botao");
+            let text = document.getElementsByClassName("texto");
+            console.log(text[0]);
+            button[0].addEventListener("click", function () {
+                text[0].classList.toggle("texto-visivel");
+            });
+            button[1].addEventListener("click", function () {
+                text[1].classList.toggle("texto-visivel");
+            });
+            button[2].addEventListener("click", function () {
+                text[2].classList.toggle("texto-visivel");
+            });
+    
+        </script>
+</body>
+</html>

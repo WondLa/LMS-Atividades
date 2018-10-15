@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.pagina .cabecalho {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.nome-pagina {
+    color: white;
+    display: inline;
+    font-size: 25px;
+}
+
+.pagina {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    transition: left 600ms;
+}
+
+.pagina-visivel {
+    left: 25vh;
+}
+
+.pagina header{
+    padding: 20px;
+    display: block;
+    width: 100%;
+    background-color: deeppink;
+}
+
+.navegador-lateral {
+    max-width: 0px;
+    overflow: hidden;
+    transition: max-width 600ms;
+    background-color: deeppink;
+    float: left;
+    height: 100%;
+    width: 25vh;
+    position: fixed;
+    
+    z-index: 1;
+}
+
+.navegador-visivel {    
+    width: 25vh;
+    max-width: 400px;
+    transition: max-width 600ms;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navegador-lateral ul li a{
+    width: 76%;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.navegador-lateral ul li a:hover {
+    background-color: pink;
+}
+
+.conteudo {
+    width: 100%;
+    position: relative;
+}
+
+.textos {
+    position: absolute;
+    background-color: deepskyblue;
+    width: 25%;
+    left: 50%;
+    transform: translate(-80%,0);
+    text-align: center;
+}
+
+.botao {
+    padding: 10px;
+    width: 94%;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: darkblue;
+}
+
+.texto {
+    background-color: blue;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 600ms;
+}
+
+.texto-visivel {
+    max-height: 400px;
+    transition: max-height 600ms;
+}
+
+.sanduiche {
+    margin-right: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    display: inline;
+    cursor: pointer;
+}
+
+.sanduiche:hover {
+    color: indigo;
+}
+
+@media (min-width: 480px) {
+    .sanduiche {
+        display: none;
+    }
+}
+
+@media (min-width: 480px) {
+    .navegador-lateral {
+        max-width: 400px;    
+        width: 25vh;
+        transition: max-width 600ms;
+    }
+
+    .pagina {
+        left: 25vh;
+        transition: left 600ms;
+    }
+}
