@@ -89,7 +89,7 @@ ul {
 
 .botao {
     padding: 10px;
-    overflow: hiden;
+    overflow: hidden;
     width: 94%;
     display: inline-block;
     text-decoration: none;
