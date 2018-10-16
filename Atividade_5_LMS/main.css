@@ -81,6 +81,7 @@ ul {
 .textos {
     position: absolute;
     background-color: deepskyblue;
+    overflow: hidden;
     width: 25%;
     left: 50%;
     transform: translate(-80%,0);
@@ -89,7 +90,6 @@ ul {
 
 .botao {
     padding: 10px;
-    overflow: hidden;
     width: 94%;
     display: inline-block;
     text-decoration: none;
